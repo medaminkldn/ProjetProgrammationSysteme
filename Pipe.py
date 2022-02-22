@@ -13,5 +13,5 @@ if pid > 0:
 else:
     os.close(w) 
     print("Child Process is reading") 
-    r = os.fdopen(r) 
-    print("Read text:", r.read()) 
+    fd = os.fdopen(r) 
+    print("Read text:", fd.read()) 
