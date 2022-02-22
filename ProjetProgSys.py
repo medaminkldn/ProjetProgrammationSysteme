@@ -463,7 +463,7 @@ class Ui_Form(object):
 
     def saveFile(self):
         fileName = self.comboBox_Files.currentText().strip()
-        with open("Files/"+fileName, "a") as file:
+        with open("Files/"+fileName, "w") as file:
             content = self.plainFileTextEdit.toPlainText()
             file.write(content)
 
